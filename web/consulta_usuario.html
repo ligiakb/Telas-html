@@ -5,40 +5,46 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    </head>
-    <header>
-        <h1>Web Carros de Emergência</h1>    
-    </header>
-    <nav>
-        <ul>
-        <li>Fulano (admin)</li>
-        <li><a href="./menu_enferm.html">Carros</a></li>
-        <li><a href="./menu_farma.html">Usuários</a></li>
-        <li><a href="#">Itens</a></li>
-        <li><a href="#">Sair</a></li>
-        </ul>
-    </nav>
+   <head>
+    <title>Web Carros de Emergência</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/font-awesome.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
 
-    <main>
-        
-    </main>
-    
-    <body>
-        
-        
-        <div class="container">
-                 
-            <div class="row">
-                <div class="col-2">
-                   
-                </div>
-                
-                <div class="col-10">
+<header class="navbar fixed-top navbar-light tgi-header">
+    <h1>Web Carros de Emergência</h1>
+</header>
+<!-- See bootstrap documentation for navbar positioning options. All classes used here are bootstrap defaults, with the exception of the ones starting with prefix 'tgi-' -->
+<nav class="navbar fixed-top navbar-dark bg-dark tgi-nav">
+    <ul class="nav">
+        <li class="nav-item">
+            <i class="fa fa-user"></i>
+            Fulano (admin)
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Carros</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Usuários</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Itens</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Sair</a>
+        </li>
+    </ul>
+</nav>
+
+   <main class="tgi-main">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <h3>Consultar usuário</h3>
                     <form>
                         <div class="form-group col-md-4">
                         <label class="col-form-label" for="formGroupExampleInput">Buscar por nome:</label>
@@ -64,12 +70,9 @@ and open the template in the editor.
                         </div>
                                                
                     </form>
-                    
-                </div>
             </div>
         </div>
-        <div>
-        </div>
-       
-    </body>
+    </div>
+</main>
+
 </html>
