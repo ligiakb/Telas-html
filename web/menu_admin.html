@@ -1,11 +1,7 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
+
+<head>
     <title>Web Carros de Emergência</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,37 +36,32 @@ and open the template in the editor.
     </ul>
 </nav>
 
-    <main>
-        
-    </main>
-    
-    <body>
-        
-        
-        <div class="container">
-                 
-            <div class="row">
-                <div class="col-2">
-                   
-                </div>
-                
-                <div class="col-10">
-                    <h2>Olá, Fulano!</h2></br>
+<main class="tgi-main">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- I've removed the col-2 used for spacing because the class 'tgi-main' is responsible for aligning content in the page -->
+            <div class="col-10">
+                <h2>Olá, Fulano!</h2>
+                <div class="card tgi-card">
                     <h3>CARROS</h3>
                     <h4>Etiquetar carros sem identificação</h4>
                     <h4>Criar novos tipos de lista para nova unidade</h4>
-                    <h4>Ver e editar carros existentes</h4></br>
+                    <h4>Ver e editar carros existentes</h4>
+                </div>
+                <div class="card tgi-card">
                     <h3>USUÁRIOS</h3>
                     <h4>Criar novos usuários</h4>
-                    <h4>Ver e editar usuários existentes e suas permissões</h4></br>
+                    <h4>Ver e editar usuários existentes e suas permissões</h4>
+                </div>
+                <div class="card tgi-card">
                     <h3>ITENS</h3>
                     <h4>Criar um novo tipo de item</h4>
-                    <h4>Consultar e editar um item existente e sua distribuição</h4></br>
+                    <h4>Consultar e editar um item existente e sua distribuição</h4>
                 </div>
             </div>
         </div>
-        <div>
-        </div>
-       
-    </body>
+    </div>
+    <!-- Avoid empty divs, avoid using br, spacing should be edited with css -->
+</main>
+
 </html>
