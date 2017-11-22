@@ -39,7 +39,46 @@ and open the template in the editor.
         </li>
     </ul>
 </nav>
-    <body>
-        <div>TODO write content</div>
-    </body>
+    <main class="tgi-main">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <h3>Consultar carro</h3>
+                    <form>
+                        <div class="form-group col-md-4">
+                        <label for="inputState">Listar por unidade</label>
+                        <select id="inputState" class="form-control">
+                        <option selected>Selecione...</option>
+                        <option>UTI-Adulto</option>
+                        <option>CO</option>
+                        <option>Maternidade</option>
+                        <option>Ambulatório</option>
+                        <option>Unidade Coronariana</option>
+                        <option>Unidade Semi-intensiva Adulto</option>
+                        </select>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Listar</button>
+                        </div>
+                        
+                        <div class="form-group col-md-4">
+                        <label class="col-form-label" for="formGroupExampleInput">Buscar por ID:</label>
+                        <input class="form-control mr-sm-2" type="search" placeholder="Ex.: 13134362" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                        </div>
+                        
+                        <div class="form-group col-md-4">
+                        <label for="inputState">Listar por status</label>
+                        <select id="inputState" class="form-control">
+                        <option selected>Selecione...</option>
+                        <option>Completo</option>
+                        <option>Incompleto</option>
+                        <option>Pedido separado</option>
+                        </select>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Listar</button>
+                        </div>
+                    </form>
+                <button type="button" class="btn btn-secondary btn-sm">Tela inicial</button>
+            </div>
+        </div>
+    </div>
+</main>
 </html>
