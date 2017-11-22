@@ -5,7 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-   <head>
+    <head>
     <title>Web Carros de Emergência</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,15 +39,50 @@ and open the template in the editor.
         </li>
     </ul>
 </nav>
-
-    
     <main class="tgi-main">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-10">
-              <h3>Resultado conferência</h3>
-              <h4>Carro: 48347246 - UTI</h4>
-              <h5>Itens faltantes</h5>
+              <h3>Resultado da busca</h3>
+                    <table class="table table-sm">
+                    <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Unidade</th>
+                    <th scope="col">Data da última conferência</th>
+                    <th scope="col">Status</th>
+                    <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <th scope="row">1</th>
+                    <td>92759574</td>
+                    <td>Maternidade</td>
+                    <td>07/11/2017</td>
+                    <td>Incompleto</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Detalhes</button></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">2</th>
+                    <td>28563038</td>
+                    <td>Ambulatório</td>
+                    <td>17/11/2017</td>
+                    <td>Incompleto</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Detalhes</button></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">3</th>
+                    <td>19473938</td>
+                    <td>UTI-Adulto</td>
+                    <td>20/11/2017</td>
+                    <td>Incompleto</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">Detalhes</button></td>
+                    </tr>
+                    </tbody>
+                    </table>
+              <h4>Detalhes</h4>
                     <table class="table table-sm">
                     <thead>
                     <tr>
@@ -58,7 +93,8 @@ and open the template in the editor.
                     <th scope="col">Unidade</th>
                     <th scope="col">Volume</th>
                     <th scope="col">Unidade</th>
-                    <th scope="col">Quantidade</th>
+                    <th scope="col">Situação</th>
+                    <th scope="col"></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -70,17 +106,17 @@ and open the template in the editor.
                     <td>N/A</td>
                     <td>10</td>
                     <td>ml</td>
-                    <td>1</td>
+                    <td>Presente</td>
                     </tr>
                     <tr>
                     <th scope="row">2</th>
                     <td>6274</td>
-                    <td>Seringa</td>
+                    <td>Seringa S.F.</td>
                     <td>N/A</td>
                     <td>N/A</td>
-                    <td>20</td>
+                    <td>10</td>
                     <td>ml</td>
-                    <td>2</td>
+                    <td>Presente</td>
                     </tr>
                     <tr>
                     <th scope="row">3</th>
@@ -90,17 +126,15 @@ and open the template in the editor.
                     <td>mg</td>
                     <td>10</td>
                     <td>ml</td>
-                    <td>1</td>
+                    <td>Ausente</td>
                     </tr>
                     </tbody>
                     </table>
-                    </br>
-                    <center><button type="button" class="btn btn-primary btn-sm">Gerar pedido</button></center></br>
+                    <center><button type="button" class="btn btn-primary btn-sm">Nova busca</button></center></br>
                     <center><button type="button" class="btn btn-secondary btn-sm">Tela inicial</button></center>
                 </div>   
             </div>
         </div>
     </main>
-
 </html>
 
